@@ -6,7 +6,7 @@ import Footer from "./components/Footer"
 function App() {
   return (
     <div className="container">
-      <Info name="İsmail Günay" title="Junior Frontend Developer" />
+      <Info name={person.name} title={person.title} email={person.email}/>
       <TextArea text={person.about} />
       <TextArea text={person.interests} />
       <Footer linkedInURL={person.linkedInURL} gitHubURL={person.githubURL}/>
@@ -15,6 +15,9 @@ function App() {
 }
 
 const person = {
+  name: "İsmail Günay",
+  title: "Junior Frontend Developer",
+  email: "ismailggunay@gmail.com",
   linkedInURL: "https://linkedin.com/in/ismailgunayy/",
   githubURL: "https://github.com/ismailgunayy",
   about: {
