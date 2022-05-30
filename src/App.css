@@ -1,8 +1,16 @@
 .container {
-  margin: 20% 15% 0 15%;
+  max-width: 250px;
+  margin: 10% auto 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   background-color: #1A1B21;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    max-width: 400px;
+    margin: 10% auto 0 auto;
+  }
 }
