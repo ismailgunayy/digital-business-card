@@ -1,11 +1,16 @@
 import React from "react"
-import './Info.css'
-import Portrait from "../images/portrait.png"
+import "./Info.css"
+import Portrait from "../images/portrait.jpeg"
+import Button from "./Button"
 
-function Info() {
+function Info(props) {
+  const { name, title } = props
   return (
-    <div>
-      <img src={Portrait} alt="Portrait"/>
+    <div className="info-container">
+      <img src={Portrait} alt="Portrait" />
+      <h1>{name}</h1>
+      <h4>{title}</h4>
+      <Button />
     </div>
   )
 }

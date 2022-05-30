@@ -1,0 +1,36 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 10px 0 20px 0;
+
+  width: 80%;
+  height: 35px;
+
+  background-color: rgba(255, 255, 255, 0.575);
+  transition: 0.3s;
+
+  border-radius: 6px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.button .mail-icon {
+  margin: 0px 5px 0px 0px;
+}
+
+.button h4 {
+  margin: 0px 0px 0px 5px;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+  font-weight: light;
+}
+
+.button:hover h4 {
+  color: #1a1f27;
+}
