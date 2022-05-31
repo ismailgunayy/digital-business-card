@@ -1,11 +1,15 @@
 import "./App.css"
+import Portrait from "./components/Portrait"
 import Info from "./components/Info"
 import TextArea from "./components/TextArea"
 import Footer from "./components/Footer"
+import portrait from "./images/portrait.jpeg"
+
 
 function App() {
   return (
     <div className="container">
+      <Portrait portrait={portrait}/>
       <Info name={person.name} title={person.title} email={person.email}/>
       <TextArea text={person.about} />
       <TextArea text={person.interests} />

@@ -5,14 +5,50 @@
   flex-direction: column;
   align-items: center;
 
-  background-color: #1a1b21;
+  background-color: rgba(31, 32, 37, 0.8);
 
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 @media only screen and (min-width: 600px) {
   .container {
     max-width: 450px;
     margin: 2.5vh auto 2.5vh auto;
+  }
+}
+
+.portrait {
+  opacity: 0;
+  animation: 2s ease-in-out forwards fadeIn;
+}
+
+.info-container {
+  opacity: 0;
+  animation: 2s ease-in-out 0.4s forwards fadeIn;
+}
+
+.text-area-container:nth-child(3) {
+  opacity: 0;
+  animation: 2s ease-in-out 0.8s forwards fadeIn;
+}
+
+.text-area-container:nth-child(4) {
+  opacity: 0;
+  animation: 2s ease-in-out 1.2s forwards fadeIn;
+}
+
+.footer-container {
+  opacity: 0;
+  animation: 2s ease-in-out 1.6s forwards fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    pointer-events: all;
+    opacity: 1;
   }
 }
