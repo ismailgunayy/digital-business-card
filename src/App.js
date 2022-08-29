@@ -27,7 +27,7 @@ const person = {
   about: {
     header: "About",
     content:
-      "I am a student who improves himself in frontend development. I try to keep up with the best practices, and am always looking for new things to learn.",
+      "I am a student who improves himself in frontend development. I try to keep up with the best practices, and always look for new things to learn.",
   },
   interests: {
     header: "Interests",
